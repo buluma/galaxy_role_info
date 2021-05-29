@@ -1,6 +1,6 @@
 ---
-name: Publish Ansible role to Bulumas Galaxy
-description: Publish Ansible role to Galaxy
+name: Buluma - Role info
+description: Checks Ansible Role info
 author: Michael Buluma <bulumaknight@gmail.com>
 
 inputs:
@@ -14,7 +14,7 @@ inputs:
  
 runs:
   using: docker
-  image: 'docker://buluma/github-action-galaxy'
+  image: 'docker://buluma/docker_galaxy_role_info'
   env:
     galaxy_api_key: ${{ inputs.galaxy_api_key }}
 
